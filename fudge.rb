@@ -5,20 +5,20 @@
 class Fudge < Formula
   desc "clusterfudge on the command line"
   homepage "https://clusterfudge.com"
-  version "0.0.4"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.4/homebrew-tap_0.0.4_darwin_arm64.tar.gz"
-      sha256 "851b912bfb2307f822567096c626f81358b8fff1cbfdef2ce11c21b83db03cdd"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.8/homebrew-tap_0.0.8_darwin_arm64.tar.gz"
+      sha256 "469cb60fe4e3598eb9880d1c4b62b38c23b78501cfd7764dffcc93417d284be5"
 
       def install
         bin.install "fudge"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.4/homebrew-tap_0.0.4_darwin_amd64.tar.gz"
-      sha256 "87e84fb6ab1c59c8bfc525680d638b204d14f9e665915890883ba1b8e9b46727"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.8/homebrew-tap_0.0.8_darwin_amd64.tar.gz"
+      sha256 "2554c7f8f0b93f7690fd9cc22b4d10dc8e3af9ac53968a99e34746d56fcd54e7"
 
       def install
         bin.install "fudge"
@@ -27,17 +27,17 @@ class Fudge < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.4/homebrew-tap_0.0.4_linux_arm64.tar.gz"
-      sha256 "be43d84e753ff3ff261faf9c65cbb263c6c511ced59abaf216c90ac0b113e52f"
+    if Hardware::CPU.intel?
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.8/homebrew-tap_0.0.8_linux_amd64.tar.gz"
+      sha256 "23ff8003226d17d6dcf3dfba1781863a149126a1acefbb903331e92de62a9564"
 
       def install
         bin.install "fudge"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.4/homebrew-tap_0.0.4_linux_amd64.tar.gz"
-      sha256 "d84a68e480690c9112432437f30d3c86c7c42981d03c4fcd15212c6595306daf"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.8/homebrew-tap_0.0.8_linux_arm64.tar.gz"
+      sha256 "251252f38ed9eb4329e695da093ff6ddbdd5a8e88c10b81536d41bd9ac0379a2"
 
       def install
         bin.install "fudge"
