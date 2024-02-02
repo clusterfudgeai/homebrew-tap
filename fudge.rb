@@ -5,20 +5,20 @@
 class Fudge < Formula
   desc "clusterfudge on the command line"
   homepage "https://clusterfudge.com"
-  version "0.0.8"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.8/homebrew-tap_0.0.8_darwin_arm64.tar.gz"
-      sha256 "469cb60fe4e3598eb9880d1c4b62b38c23b78501cfd7764dffcc93417d284be5"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.1.0/homebrew-tap_0.1.0_darwin_arm64.tar.gz"
+      sha256 "997f028516bf7a0695285ad989279a8441bac2adbd68aa27497e36b471df1688"
 
       def install
         bin.install "fudge"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.8/homebrew-tap_0.0.8_darwin_amd64.tar.gz"
-      sha256 "2554c7f8f0b93f7690fd9cc22b4d10dc8e3af9ac53968a99e34746d56fcd54e7"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.1.0/homebrew-tap_0.1.0_darwin_amd64.tar.gz"
+      sha256 "346dfb8e6482ca41a9ce93c0cda600d2671816465758965d3be31b1e6be238ec"
 
       def install
         bin.install "fudge"
@@ -28,16 +28,16 @@ class Fudge < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.8/homebrew-tap_0.0.8_linux_amd64.tar.gz"
-      sha256 "23ff8003226d17d6dcf3dfba1781863a149126a1acefbb903331e92de62a9564"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.1.0/homebrew-tap_0.1.0_linux_amd64.tar.gz"
+      sha256 "09bc371034214005c29079dc770606d2a4a5ac11a68d89cec23bed5903e061b7"
 
       def install
         bin.install "fudge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.8/homebrew-tap_0.0.8_linux_arm64.tar.gz"
-      sha256 "251252f38ed9eb4329e695da093ff6ddbdd5a8e88c10b81536d41bd9ac0379a2"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.1.0/homebrew-tap_0.1.0_linux_arm64.tar.gz"
+      sha256 "724fea3aa8b7b16162a3ba7d43046bdb0b903d439bb788cc461ab5a795854183"
 
       def install
         bin.install "fudge"
