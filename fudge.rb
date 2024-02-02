@@ -9,16 +9,16 @@ class Fudge < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/clusterfudgeai/fudge/releases/download/v0.0.3/fudge_0.0.3_darwin_arm64.tar.gz"
-      sha256 "85ffb6ce61d66bee029525194e35a20580f91643a0bf27f2faaad45909c35bbc"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.3/homebrew-tap_0.0.3_darwin_arm64.tar.gz"
+      sha256 "12060f8fe88e83ee5d843c880611d6a761c019888c61c90276401016ed0db72f"
 
       def install
         bin.install "fudge"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/clusterfudgeai/fudge/releases/download/v0.0.3/fudge_0.0.3_darwin_amd64.tar.gz"
-      sha256 "77620f07ed18fab61931fb3b816efc46579682ffad975d6bb56d98a951407da5"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.3/homebrew-tap_0.0.3_darwin_amd64.tar.gz"
+      sha256 "cf7e2a2df809b5cdc7e52df416b13e4899212e34f60a142a1fa0cbe65377bfb0"
 
       def install
         bin.install "fudge"
@@ -28,16 +28,16 @@ class Fudge < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/clusterfudgeai/fudge/releases/download/v0.0.3/fudge_0.0.3_linux_arm64.tar.gz"
-      sha256 "1991547a2d18cd248da2bf9b56133d79353065667d22ea60f9717317b1848d5d"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.3/homebrew-tap_0.0.3_linux_arm64.tar.gz"
+      sha256 "a067d20d754ad38dcdf25c845afea4256c1a912af8e95797870d7a3b214a09c0"
 
       def install
         bin.install "fudge"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/clusterfudgeai/fudge/releases/download/v0.0.3/fudge_0.0.3_linux_amd64.tar.gz"
-      sha256 "30e65715860e93efbc746840997401a8ef4bc2d34a297a3e32c5e3c43971b311"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.0.3/homebrew-tap_0.0.3_linux_amd64.tar.gz"
+      sha256 "2e8dfc17bd8eabac72691c788b0e51517c80653235c42e53402303f8f3a55cd2"
 
       def install
         bin.install "fudge"
