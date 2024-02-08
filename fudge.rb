@@ -5,20 +5,20 @@
 class Fudge < Formula
   desc "clusterfudge on the command line"
   homepage "https://clusterfudge.com"
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.1.6/clusterfudge-cli_0.1.6_darwin_arm64.tar.gz"
-      sha256 "ecb5dc1c8c666829fdf2852e5add164c6b847744278296b04faa17a2eb881809"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.1.7/clusterfudge-cli_v0.1.7_darwin_arm64.tar.gz"
+      sha256 "6dac718e4d361fa6136f719ae4441db3451075a19197b2db6882f7c33757aa95"
 
       def install
         bin.install "fudge"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.1.6/clusterfudge-cli_0.1.6_darwin_amd64.tar.gz"
-      sha256 "7de4a3050f3605769741d5d0ab940552360308b40927b08b024396242b2a76b1"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.1.7/clusterfudge-cli_v0.1.7_darwin_amd64.tar.gz"
+      sha256 "07db8f401410d59e2ad1d51741c7cfd48d1f05149a8423454eaa05bcd5ea4a65"
 
       def install
         bin.install "fudge"
@@ -28,16 +28,16 @@ class Fudge < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.1.6/clusterfudge-cli_0.1.6_linux_arm64.tar.gz"
-      sha256 "05cc261c87713cc79b44e6c7c0e64514e4db55e8e8ff56e0fbe84a14deee94e3"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.1.7/clusterfudge-cli_v0.1.7_linux_arm64.tar.gz"
+      sha256 "0f8c5ac038ac2751c2b104fc047d87251f4b845c35b76d388c13c9ff4e366c01"
 
       def install
         bin.install "fudge"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.1.6/clusterfudge-cli_0.1.6_linux_amd64.tar.gz"
-      sha256 "0a1003162a0de53d2177ea2def9806f6942b4825e6bb4801b5214f163cd5f06c"
+      url "https://github.com/clusterfudgeai/homebrew-tap/releases/download/v0.1.7/clusterfudge-cli_v0.1.7_linux_amd64.tar.gz"
+      sha256 "4bd95950b9640481e624a340ef4543b1d6138d6961f80b4f65f9a9affd4a5e74"
 
       def install
         bin.install "fudge"
